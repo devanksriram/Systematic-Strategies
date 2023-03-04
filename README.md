@@ -1,5 +1,3 @@
-# Systematic-Strategies
-Systematic strategy to trade Volatility Surface -Rotman International Trading Competition, 2023
 OVERVIEW
 The Volatility Trading Case gives participants the opportunity to generate profits by implementing
 options strategies to trade volatility. The underlying asset of the options is a non-dividend-paying

@@ -78,7 +78,7 @@ underlying security, RTM. Participants are therefore required to manage their po
 exposure. Recognizing the transaction costs and impracticality of perfect delta hedging (i.e.
 keeping the portfolio’s delta at zero at all times), the RITC scoring committee will allow the
 portfolio’s delta to be different from zero but it is required to stay between – 𝑑𝑒𝑙𝑡𝑎 𝑙𝑖𝑚𝑖𝑡 and
-+ 𝑑𝑒𝑙𝑡𝑎 𝑙𝑖𝑚𝑖𝑡. Please note that 𝑑𝑒𝑙𝑡𝑎 𝑙𝑖𝑚𝑖𝑡 is an integer number greater than 1,000 that will be
+𝑑𝑒𝑙𝑡𝑎 𝑙𝑖𝑚𝑖𝑡. Please note that 𝑑𝑒𝑙𝑡𝑎 𝑙𝑖𝑚𝑖𝑡 is an integer number greater than 1,000 that will be
 announced at the beginning of the case via a news release in RIT. For example, the following news
 could be released: “The delta limit for this heat is 5,000 and the penalty percentage is 0.5%”.
 According to that news, any participant that has a portfolio delta greater than 5,000 will be

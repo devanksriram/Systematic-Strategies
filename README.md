@@ -1,4 +1,5 @@
 OVERVIEW
+
 The Volatility Trading Case gives participants the opportunity to generate profits by implementing
 options strategies to trade volatility. The underlying asset of the options is a non-dividend-paying
 Exchange Traded Fund (ETF) called RTM that tracks a major stock index. Participants will be able
@@ -9,6 +10,7 @@ and construct options trading strategies accordingly.
 
 
 DESCRIPTION
+
 There will be 5 independent heats with two team members participating in each heat. Please note
 that only two team members shall trade to represent the team for all heats. Each heat will be 10
 minutes long and represent two months of calendar time.
@@ -21,6 +23,7 @@ retrieval via Real-time Data (RTD) Links and the RIT API will also be enabled.
 
 
 MARKET DYNAMICS
+
 Participants will be able to trade RTM and 40 separate options contracts on RTM at the beginning
 of the case. All options are European, so early exercise is not allowed. After the first period ends,
 the one-month expiration options will no longer be tradable as they expire.
@@ -126,6 +129,7 @@ on the exercise value of 100 shares).
 
 
 POSITION CLOSE-OUT
+
 Any outstanding position in RTM will be closed at the end of trading based on the last-traded price.
 There are no liquidity constraints for the options nor RTM. All options will be cash-settled based
 on the following upon expiration:

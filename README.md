@@ -8,6 +8,22 @@ prices. Information including the ETF price, options prices, and news releases w
 Participants are encouraged to use the provided information to identify mispricing opportunities
 and construct options trading strategies accordingly.
 
+KEY OBJECTIVES
+
+Objective 1
+Build a model to forecast the future volatility of the underlying ETF based on known information
+and given forecast ranges. Participants should use this model with an options pricing model to
+determine whether the market prices for options are overvalued or undervalued. They should then
+trade the specific options accordingly.
+
+Objective 2
+Use Greeks to calculate the portfolio exposure and hedge the position to reduce the risk of the
+portfolio while profiting from volatility differentials across options.
+
+Objective 3
+Seek arbitrage opportunities across different options and different expiries using calendar spreads. 
+
+
 
 DESCRIPTION
 
@@ -138,20 +154,4 @@ on the following upon expiration:
 Where,
 𝑆 is the last price of RTM;
 𝐾 is the strike price of the option.
-
-
-KEY OBJECTIVES
-
-Objective 1
-Build a model to forecast the future volatility of the underlying ETF based on known information
-and given forecast ranges. Participants should use this model with an options pricing model to
-determine whether the market prices for options are overvalued or undervalued. They should then
-trade the specific options accordingly.
-
-Objective 2
-Use Greeks to calculate the portfolio exposure and hedge the position to reduce the risk of the
-portfolio while profiting from volatility differentials across options.
-
-Objective 3
-Seek arbitrage opportunities across different options and different expiries using calendar spreads. 
 

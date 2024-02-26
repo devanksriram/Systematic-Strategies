@@ -6,6 +6,8 @@ to trade shares of the ETF as well as 1-month and 2-month call/put options at 10
 prices. Information including the ETF price, options prices, and news releases will be provided.
 Participants are encouraged to use the provided information to identify mispricing opportunities
 and construct options trading strategies accordingly.
+
+
 DESCRIPTION
 There will be 5 independent heats with two team members participating in each heat. Please note
 that only two team members shall trade to represent the team for all heats. Each heat will be 10
@@ -16,10 +18,13 @@ Trading time per heat 600 seconds (10 minutes)
 Calendar time per heat 2 months (40 trading days)
 News will be released during each heat. Order submissions using the RIT API will be enabled. Data
 retrieval via Real-time Data (RTD) Links and the RIT API will also be enabled.
+
+
 MARKET DYNAMICS
 Participants will be able to trade RTM and 40 separate options contracts on RTM at the beginning
 of the case. All options are European, so early exercise is not allowed. After the first period ends,
 the one-month expiration options will no longer be tradable as they expire.
+
 Starting Option Prices for One-month Expiration
 Call Price Call Ticker Strike Price Put Ticker Put Price
 $5.04 RTM1C45 45 RTM1P45 $0.04
@@ -32,6 +37,7 @@ $0.73 RTM1C51 51 RTM1P51 $1.73
 $0.44 RTM1C52 52 RTM1P52 $2.44
 $0.24 RTM1C53 53 RTM1P53 $3.24
 $0.13 RTM1C54 54 RTM1P54 $4.13
+
 Starting Option Prices for Two-month Expiration
 Call Price Call Ticker Strike Price Put Ticker Put Price
 $5.18 RTM2C45 45 RTM2P45 $0.18
@@ -44,20 +50,24 @@ $1.19 RTM2C51 51 RTM2P51 $2.19
 $0.85 RTM2C52 52 RTM2P52 $2.85
 $0.59 RTM2C53 53 RTM2P53 $3.59
 $0.39 RTM2C54 54 RTM2P54 $4.39
+
 All securities are priced by market-makers who will always quote a bid-ask spread of 2 cents (i.e.
 $49.99*$50.01 for the RTM, or $4.08*$4.10 for the RTM1C46). The bids and asks are for very large
 quantities (there are no liquidity constraints in this case).
+
 The price of RTM follows a random-walk and the path is generated using the following process:
 𝑃𝑅𝑇𝑀,𝑡 = 𝑃𝑅𝑇𝑀,𝑡−1 ∗ (1 + 𝑟𝑡
 ) 𝑤ℎ𝑒𝑟𝑒 𝑟𝑡~𝑁(0, 𝜎𝑡)
+
 The price of the stock is based on the previous price multiplied by a return that is drawn from a
 normal distribution with a mean of zero and standard deviation (volatility) of 𝜎𝑡 = 20% (on an
 annualized basis).
+
 The trading period is divided into 8 weeks, with 𝑡 = 1 … 75 being week one, 𝑡 = 76 … 150 being
-week two, and so on. At the beginning of each week, the volatility value (𝜎𝑡
-) will shift and the new
+week two, and so on. At the beginning of each week, the volatility value (𝜎𝑡) will shift and the new
 value will be provided to participants. In addition, at the middle of each week (e.g. 𝑡 = 38) an
 analyst estimate of next week’s volatility value will be announced.
+
 Sample News Release Schedule
 Time Week Release
 1 Week 1 The realized volatility of RTM for this week will be 20%
@@ -66,6 +76,7 @@ Time Week Release
 76 Week 2 The realized volatility of RTM for this week will be 29%
 … … …
 526 Week 8 The realized volatility of RTM for this week will be 26%
+
 The observed and tradable prices of the options will be based on a computerized market-maker
 posting bids and offers for all options. The market maker will price the options using the Black
 Scholes model. It is important to note that the case assumes a risk-free rate of 0%. The volatility
@@ -112,6 +123,8 @@ Transaction fees will be set at $0.02 per share traded for RTM and $2.00 per con
 RTM options. As with standard options markets, each contract represents 100 shares (purchasing
 1 option contract for $0.35/option will actually cost $35 plus a $2 commission, and will settle based
 on the exercise value of 100 shares).
+
+
 POSITION CLOSE-OUT
 Any outstanding position in RTM will be closed at the end of trading based on the last-traded price.
 There are no liquidity constraints for the options nor RTM. All options will be cash-settled based
@@ -121,15 +134,20 @@ on the following upon expiration:
 Where,
 𝑆 is the last price of RTM;
 𝐾 is the strike price of the option.
+
+
 KEY OBJECTIVES
+
 Objective 1
 Build a model to forecast the future volatility of the underlying ETF based on known information
 and given forecast ranges. Participants should use this model with an options pricing model to
 determine whether the market prices for options are overvalued or undervalued. They should then
 trade the specific options accordingly.
+
 Objective 2
 Use Greeks to calculate the portfolio exposure and hedge the position to reduce the risk of the
 portfolio while profiting from volatility differentials across options.
+
 Objective 3
 Seek arbitrage opportunities across different options and different expiries using calendar spreads. 
 
